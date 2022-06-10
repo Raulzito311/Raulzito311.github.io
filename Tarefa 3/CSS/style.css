@@ -1,6 +1,6 @@
 body {
     margin: 0 !important;
-    box-sizing: border-box;
+    /*box-sizing: border-box;*/
 	font-size: 100%;
     font-family: "Raleway", Helvetica, sans-serif;
     background-color: #f4f4f4;
@@ -111,6 +111,7 @@ font-size: 1rem;
 
 .main {
     padding: 8.5em 10.5em;
+    display: flex;
 }
 
 /* SIDE-BAR */
@@ -276,5 +277,45 @@ font-size: 1rem;
 /* ABOUT - END */
 
 /* SIDE-BAR - END */
+
+/* ARTICLES */
+
+.articles {
+    background-color: red;
+    margin-left: 4.5em;
+}
+
+/* ARTICLE */
+
+.articles .article {
+    background-color: white;
+    overflow: hidden;
+    border: solid 1px #9994;
+}
+
+.article .header {
+    display: flex;
+    width: 100%;
+    border-bottom: solid 1px #9994;
+}
+
+.article .header .title {
+    flex-grow: 1;
+    border-right: solid 1px #9994;
+    padding: 5em;
+}
+
+.article .header .title h1 {
+    font-weight: 900;
+    letter-spacing: 5px;
+}
+
+.article .header .info {
+    width: 30%;
+}
+
+/* ARTICLE - END */
+
+/* ARTICLES - END */
 
 /* MAIN - END */
