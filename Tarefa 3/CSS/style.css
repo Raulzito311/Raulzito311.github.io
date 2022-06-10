@@ -2,23 +2,27 @@ body {
     margin: 0 !important;
     box-sizing: border-box;
 	font-size: 100%;
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: "Raleway", Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    letter-spacing: 3px;
 }
 
+/* HEADER */
 .top {
     position: fixed;
     width: 100%;
     top: 0;
     background-color:#fff;
+    z-index: 999;
 }
 
 #header {
     margin: 1.5rem 0 0 0;
     border-top: 2px solid black;
     width: 100%;
-    line-height: 3.5em;
-    height: 3.5em;
-    background-color: #ffffff;
+    line-height: 3em;
+    height: 3em;
+    background-color: #fff;
     border-bottom: solid 1px #9994;
 }
 
@@ -26,6 +30,10 @@ body {
     color: inherit;
     text-decoration: none;
     font-size: 0.7em;
+}
+
+#header li a {
+    color: #bbb
 }
 
 #header ul {
@@ -48,7 +56,7 @@ body {
 }
 
 #header h1 {
-    padding: 0 0 0 1.5em;
+    padding: 0 0 0 4em;
     white-space: nowrap;
     font-size: 1em;
     white-space: nowrap;
@@ -61,8 +69,8 @@ body {
 
 #header .pages {
     border-left: solid 1px #9994;
-    margin-left: 1.5em;
-    padding-left: 1.5em;
+    margin-left: 4em;
+    padding-left: 1em;
     line-height: inherit;
 }
 
@@ -76,7 +84,7 @@ body {
     border-left: solid 1px #9994;
     line-height: 1;
     margin-left: 1em;
-    padding-left: 1.5em;
+    padding-left: 1em;
 }
 
 #header .nav {
@@ -94,4 +102,46 @@ body {
 
 #header .nav li > a {
 font-size: 1rem;
+}
+
+/* MAIN */
+
+.main {
+    padding: 8.5em 10.5em;
+}
+
+.main .side-bar {
+    margin: 0;
+    width: 19em;
+    height: 100%;
+    border: solid 1px black;
+}
+
+.side-bar .header {
+    color: #3C3B3B;
+    border-bottom: solid 1px #9994;
+}
+
+.side-bar .header h1 {
+    font-size: 2.5em;
+    letter-spacing: 5px;
+    font-weight: 900;
+    margin: .3em 0;
+}
+
+.side-bar .header img {
+    width: 4em;
+
+    shape-outside: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+    clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.side-bar .header p {
+    font-size: 0.8em;
+    line-height: 2;
+}
+
+.side-bar .header a {
+    color: inherit;
+    text-decoration-style: dotted;
 }
