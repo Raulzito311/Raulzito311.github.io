@@ -4,6 +4,7 @@ body {
 	font-size: 100%;
     font-family: "Raleway", Helvetica, sans-serif;
     background-color: #f4f4f4;
+    color: #3C3B3B;
     letter-spacing: 3px;
 }
 
@@ -104,22 +105,28 @@ body {
 font-size: 1rem;
 }
 
+/* HEADER - END */
+
 /* MAIN */
 
 .main {
     padding: 8.5em 10.5em;
 }
 
+/* SIDE-BAR */
+
 .main .side-bar {
     margin: 0;
-    width: 19em;
+    width: 21.3em;
     height: 100%;
-    border: solid 1px black;
+    /*border: solid 1px black;*/
 }
 
+/* HEADER */
+
 .side-bar .header {
-    color: #3C3B3B;
     border-bottom: solid 1px #9994;
+    padding-bottom: 2em;
 }
 
 .side-bar .header h1 {
@@ -131,8 +138,6 @@ font-size: 1rem;
 
 .side-bar .header img {
     width: 4em;
-
-    shape-outside: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
     clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
 
@@ -145,3 +150,131 @@ font-size: 1rem;
     color: inherit;
     text-decoration-style: dotted;
 }
+
+/* HEADER - END */
+
+/* CARDS */
+
+.side-bar .cards {
+    padding: 3em 0;
+    border-bottom: solid 1px #9994;
+}
+
+/* CARD */
+
+.cards .card {
+    border: solid 1px #9994;
+    background-color: white;
+    line-height: normal;
+    font-size: .6em;
+    margin-top: 3.5em;
+}
+
+.cards .card:first-child {
+    margin-top: 0;
+}
+
+.card img.main {
+    width: 100%;
+    padding: 0;
+}
+
+.card img.avatar {
+    border-radius: 50%;
+    float: right;
+    padding: 1.5em;
+}
+
+.card .description {
+    display: inline-block;
+    padding: 2em;
+}
+
+.card .description h4, .card .description p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* CARD - END */
+
+/* MINI-CARD */
+
+.cards .mini-card {
+    font-size: .6em;
+    margin-top: 2.5em;
+    padding-bottom: 2.5em;
+    border-bottom: solid 1px #9994;
+}
+
+.cards .mini-card:first-child {
+    margin-top: 0;
+}
+
+.cards .mini-card:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cards .mini-card img {
+    height: 6.5em;
+    width: 6.5em;
+    object-fit: cover;
+    padding: 0;
+    display: inline-block;
+}
+
+.cards .mini-card .description {
+    display: inline-block;
+    width: 25em;
+    margin: 0 0 1em 2em;
+    overflow: hidden;
+    top: 0;
+}
+
+.mini-card .description h4 {
+    margin: 5px 0 0 0;
+    line-height: 2;
+}
+
+.mini-card .description p {
+    margin: 5px 0 0 0;
+    font-size: .9em;
+}
+
+/* MINI-CARD - END */
+
+/* CARDS - END */
+
+/* ABOUT */
+
+.side-bar .about {
+    font-size: .7em;
+    margin-top: 2.5em;
+    padding: 4em 0 5em 0;
+    border-top: solid 1px #9994;
+    border-bottom: solid 1px #9994;
+    line-height: 2;
+}
+
+.side-bar .about h4 {
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.side-bar .about p {
+    letter-spacing: 1px;
+}
+
+.side-bar .about a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 800;
+    font-size: .8em;
+    padding: 3em;
+}
+
+/* ABOUT - END */
+
+/* SIDE-BAR - END */
+
+/* MAIN - END */
