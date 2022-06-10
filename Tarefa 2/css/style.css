@@ -1,0 +1,3 @@
+.borderedTable, .borderedTable td, .borderedTable th {
+    border: 1px solid black;
+}
