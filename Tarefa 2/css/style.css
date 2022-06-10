@@ -1,3 +1,7 @@
 .borderedTable, .borderedTable td, .borderedTable th {
     border: 1px solid black;
 }
+
+.btnRound {
+    border-radius: 5px;
+}
