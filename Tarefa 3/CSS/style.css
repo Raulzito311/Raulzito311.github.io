@@ -1,7 +1,7 @@
 body {
     margin: 0 !important;
-    /*box-sizing: border-box;*/
-	font-size: 100%;
+    box-sizing: border-box;
+	font-size: 90%;
     font-family: "Raleway", Helvetica, sans-serif;
     background-color: #f4f4f4;
     color: #3C3B3B;
@@ -57,7 +57,7 @@ body {
 }
 
 #header h1 {
-    padding: 0 0 0 4em;
+    padding: 0 0 0 3.5em;
     white-space: nowrap;
     font-size: 1em;
     white-space: nowrap;
@@ -70,7 +70,7 @@ body {
 
 #header .pages {
     border-left: solid 1px #9994;
-    margin-left: 4em;
+    margin-left: 3.5em;
     padding-left: 1em;
     line-height: inherit;
 }
@@ -84,8 +84,9 @@ body {
 #header .pages ul li {
     border-left: solid 1px #9994;
     line-height: 1;
-    margin-left: 1em;
+    margin-left: .5em;
     padding-left: 1em;
+    letter-spacing: 2px;
 }
 
 #header .nav {
@@ -107,19 +108,26 @@ font-size: 1rem;
 
 /* HEADER - END */
 
+/* BODY */
+
+.body {
+    padding-bottom: 7em;
+}
+
 /* MAIN */
 
 .main {
-    padding: 8.5em 10.5em;
-    display: flex;
+    padding: 8.5em 10em 0 10em;
+    position: relative;
 }
 
 /* SIDE-BAR */
 
 .main .side-bar {
     margin: 0;
-    width: 21.3em;
+    width: 19.95em;
     height: 100%;
+    display: inline-block;
     /*border: solid 1px black;*/
 }
 
@@ -180,8 +188,11 @@ font-size: 1rem;
     padding: 0;
 }
 
-.card img.avatar {
+.avatar {
     border-radius: 50%;
+}
+
+.card img.avatar {
     float: right;
     padding: 1.5em;
 }
@@ -201,10 +212,11 @@ font-size: 1rem;
 /* MINI-CARD */
 
 .cards .mini-card {
-    font-size: .6em;
-    margin-top: 2.5em;
-    padding-bottom: 2.5em;
+    font-size: .55em;
+    margin-top: 2em;
+    padding-bottom: 2em;
     border-bottom: solid 1px #9994;
+    letter-spacing: 2px;
 }
 
 .cards .mini-card:first-child {
@@ -251,7 +263,7 @@ font-size: 1rem;
 .side-bar .about {
     font-size: .7em;
     margin-top: 2.5em;
-    padding: 4em 0 5em 0;
+    padding: 3em 0 4em 0;
     border-top: solid 1px #9994;
     border-bottom: solid 1px #9994;
     line-height: 2;
@@ -276,46 +288,191 @@ font-size: 1rem;
 
 /* ABOUT - END */
 
+/* CONTACT */
+
+.side-bar .contact {
+    margin-top: 4em;
+    color: #B6B6B6;
+}
+
+.side-bar .contact a {
+    color: inherit;
+    text-decoration-style: dotted;
+}
+
+.side-bar .contact p {
+    display: block;
+    margin-top: 4.5em;
+    font-size: .5em;
+    letter-spacing: 1px;
+}
+
+/* CONTACT - END */
+
 /* SIDE-BAR - END */
 
 /* ARTICLES */
 
 .articles {
-    background-color: red;
-    margin-left: 4.5em;
+    display: inline-block;
+    margin-left: 2.7em;
+    position: absolute;
+    width: 50.8em;
 }
 
 /* ARTICLE */
 
 .articles .article {
     background-color: white;
-    overflow: hidden;
     border: solid 1px #9994;
+    margin-bottom: 4em;
 }
 
 .article .header {
-    display: flex;
     width: 100%;
+    display: flex;
     border-bottom: solid 1px #9994;
 }
 
 .article .header .title {
-    flex-grow: 1;
+    box-sizing: border-box;
+    width: 37.65em;
     border-right: solid 1px #9994;
-    padding: 5em;
+    padding: 3em;
 }
 
-.article .header .title h1 {
-    font-weight: 900;
-    letter-spacing: 5px;
+.article .header .title h2 {
+    font-weight: 800;
+    font-size: 1.35em;
+    letter-spacing: 2.9px;
+}
+
+.article .header .title p {
+    color: #999;
+    font-size: .6em;
+    letter-spacing: 2.5px;
 }
 
 .article .header .info {
-    width: 30%;
+    box-sizing: border-box;
+    width: 16.3em;
+    padding: 3em;
+}
+
+.article .header .info h4 {
+    font-size: .7em;
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+.article .header .info p {
+    color: #aaa;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-size: .6em;
+    letter-spacing: 2px;
+    display: inline-block;
+    position: absolute;
+    right: 5em;
+    top: .55em;
+}
+
+.article .header .info div {
+    text-align: right;
+    vertical-align: middle;
+    position: relative;
+}
+
+.article .content {
+    padding: 2.8em 2.8em 2em 2.8em;
+    overflow: hidden;
+}
+
+.article .content img {
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.article .content p {
+    font-size: .8em;
+    letter-spacing: .4px;
+    line-height: 2;
+    color: #646472;
+}
+
+.article .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 3em 4em 5em;
+}
+
+.article .footer a {
+    font-size: .55em;
+    color: inherit;
+    letter-spacing: 2px;
+}
+
+.article .footer > a {
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.article .footer .actions {
+    display: flex;
+    justify-content: space-between;
+}
+
+.article .footer .actions > div {
+    margin-left: 1.5em;
+    padding-left: 1.5em;
+    border-left: solid 1px #9994;
+    color: #999;
+}
+
+.article .footer .actions > div a {
+    text-decoration: none;
+}
+
+.article .footer .actions > div:first-child {
+    margin-left: 0;
+    padding-left: 0;
+    border-left: none;
+}
+
+.article .footer .actions > div:first-child a {
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 
 /* ARTICLE - END */
 
 /* ARTICLES - END */
 
+/* PAGINATION */
+.body .pagination {
+    width: 100%;
+    margin-top: 7em;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination button {
+    background-color: inherit;
+    border: none;
+    font-size: .7em;
+    font-weight: 700;
+}
+
+.pagination .next {
+    margin-left: 2em;
+    cursor: pointer;
+}
+
+.pagination .previous {
+    margin-right: 4em;
+}
+/* PAGINATION - END */
+
 /* MAIN - END */
+
+/* BODY - END */
