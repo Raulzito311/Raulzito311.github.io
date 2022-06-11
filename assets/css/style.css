@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(#0007, #0007) repeat, url("../img/codveira.jpg") center no-repeat;
+    background-size: auto, cover;
+    position: relative;
+  }
+  
+  .main {
+    height: 700px;
+  }
+  
+  .content {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #999;
+  }
+
+  .content h1 {
+    font-size: 6em;
+  }
+
+  .content h2 {
+    font-size: 2em;
+    color: #ccc;
+    text-decoration: underline;
+    text-decoration-style: double;
+  }
+
+  .content .links {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .links a {
+    display: inline-block;
+    margin-left: 3em;
+    padding: 1em;
+    border-radius: 3em;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    border: solid 3px white;
+    background-color: inherit;
+    white-space: nowrap;
+  }
+
+  .links a:hover {
+    background-color: #fff4;
+  }
+
+  .links a:first-child {
+    margin: 0;
+  }
