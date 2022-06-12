@@ -56,7 +56,7 @@ header nav a:hover {
 main {
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 100px;
+    padding: 50px 0 100px 0;
     color: #3E3E3E;
 }
 
@@ -65,11 +65,11 @@ main div {
 }
 
 main .content {
-    width: 65%;
+    width: 55%;
 }
 
 main .sidebar {
-    width: 25%;
+    width: 20%;
 }
 
 main .content h1 {
