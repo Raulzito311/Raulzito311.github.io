@@ -1,0 +1,201 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background: url("../img/banner.jpg") center no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    text-align: center;
+    padding: 200px;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 5em;
+}
+
+header h3 {
+    margin-top: -10px;
+    font-weight: 100;
+    color: #fff6;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: fit-content;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+header nav a {
+    display: inline-block;
+    color: #fff6;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 35px;
+    white-space: nowrap;
+    border: solid 1px #fff0;
+
+    margin-left: 25px;
+}
+
+header nav a:first-child {
+    margin: 0;
+}
+
+header nav a:hover {
+    border: solid 1px white;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+    color: #3E3E3E;
+}
+
+main div {
+    display: inline-block;
+}
+
+main .content {
+    width: 65%;
+}
+
+main .sidebar {
+    width: 25%;
+}
+
+main .content h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+main .content h3 {
+    font-weight: 600;
+    margin: 0;
+}
+
+main .content img {
+    margin: 40px 0;
+}
+
+main .content p {
+    margin-top: 0;
+}
+
+main .content a {
+    color: inherit;
+}
+
+main .sidebar h2 {
+    margin: 1.8em 0 2.5em 0;
+}
+
+main .sidebar .card {
+    margin: 0;
+    padding: 3em 0 0 0;
+    margin: 3em 0 0 0;
+    border-top: solid 1px #e9e9e9;
+}
+
+main .sidebar .card:first-of-type {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
+}
+
+main .sidebar .card h4 {
+    margin: 0 0 1.3em 0;
+    color: #9d9d9d;
+    font-size: .8em;
+}
+
+main .sidebar .card .content {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+main .sidebar .card .content p {
+    line-height: 1.6;
+    margin: 0 15px;
+}
+
+main .sidebar .card .content img {
+    margin: 0;
+    display: inline-block;
+}
+
+article {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: space-around;
+}
+
+article section {
+    color: #3d3d3d;
+    padding: 100px 0;
+    width: 20%;
+}
+
+article section img {
+    width: 100%;
+    margin: 15px 0 40px 0;
+}
+
+article section p {
+    margin: 0;
+}
+
+article section a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 35px;
+    white-space: nowrap;
+    background-color: #D8523C;
+
+    margin-top: 40px;
+}
+
+footer {
+    background-color: #1b1b1b;
+    padding: 100px 0 30px 0;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+
+footer section {
+    padding: 0;
+    width: 20%;
+}
+
+footer section a {
+    display: inline-block;
+    padding: 15px 0;
+    margin: 0;
+    border-top: solid 1px #2c2c2c;
+    width: 100%;
+    color: #6a6a6a;
+    text-decoration: none;
+}
+
+footer section a:first-of-type {
+    margin-top: 0;
+    border: none;
+}
+
+footer section a:hover {
+    color: white;
+    text-decoration: underline;
+}
